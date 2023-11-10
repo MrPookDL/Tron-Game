@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./tron.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	</audio>
+	<title>TRON</title>
+</head>
+
+<body>
+	<div id="canvas-container">
+		<h1 class="Ttitle" id="titre">Jeu Tron</h1>
+		<div id="container">
+			<input type="color" value="#44CF36" name="" id="inputPlayer1">
+			<div class="counter player1">0</div>
+			<canvas id="myCanvas" width="1000" height="700" style="border:5px solid #000000;"></canvas>
+			<div class="counter player2">0</div>
+			<input type="color" value="#F000D0" name="" id="inputPlayer2">
+		</div>
+		<div id="button-container">
+			<form name="options" action="form.php" method="post">
+				<button id="start-button" onclick="start()" type="button">Start</button>
+				<div id= "round-counter" class="round-counter">Round : 0</div>
+				<button id="pause-button" onclick="pause()" type="button">Pause</button>
+			</form>
+		</div>
+		<button id="restart-button" onclick="restart()" type="button">Restart</button>
+	</div>
+	<audio id="soundtrack" src="tronSong.m4a" loop></audio>
+	<script src="tron.js"></script>
+</body>
+
+</html> 
